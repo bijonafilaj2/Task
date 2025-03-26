@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinetic - Consolidation Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">K<span>/</span>NET<span>/</span>C
+            <p class="subtitle">moving people</p>
+        </div> 
+        <a href="tel:8888888888" class="contact-number">
+            Talk to a Consolidation Specialist &nbsp; &nbsp; <i class="fa-solid fa-phone"></i> (888) 888-8888
+        </a>
+    </header>
+
+    <!-- Page 1: Contact Time Selection -->
+    <div id="contactTimePage" class="page active-page">
+        <h1 class="title">What Is The Best Time To Reach You?</h1>
+        <main class="main-content">
+            <div class="container">
+                
+                
+                <div class="time-select-group">
+                    <select id="timeSelect" class="time-select">
+                        <option value="">Choose Your Time</option>
+                        <option value="8am">8 AM CST</option>
+                        <option value="9am">9 AM CST</option>
+                        <option value="10am">10 AM CST</option>
+                        <option value="11am">11 AM CST</option>
+                        <option value="12pm">12 PM CST</option>
+                        <option value="1pm">1 PM CST</option>
+                        <option value="2pm">2 PM CST</option>
+                        <option value="3pm">3 PM CST</option>
+                        <option value="4pm">4 PM CST</option>
+                        <option value="5pm">5 PM CST</option>
+                    </select>
+                    
+                    <div class="time-hint">(All times are in CST)</div>
+                    
+                    <button id="timeSelectContinueBtn" class="continue-btn" disabled>
+                        CONTINUE &nbsp;<i class="fa-solid fa-greater-than"></i>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Page 2: Personal Details -->
+    <div id="personalDetailsPage" class="page">
+        <main class="main-content">
+            <div class="container2">
+                <h1>Add Your Personal Details</h1> 
+                <div class="form-group">
+                    <input type="text" id="firstName" placeholder="First name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="lastName" placeholder="Last name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phoneNumber" placeholder="Phone Number" required>
+                </div>
+                <div class="privacy-text">
+                    <input type="checkbox" id="privacyConsent" required>
+                    By clicking the button above, you acknowledge, consent and agree to the following: a) Our Privacy Policy and consent to receive notices and other communications electronically; b) We take your privacy seriously. You are providing express written consent to share your information with up to four (4) of its and for parties can behalf of, or authorized third parties on their behalf to contact you (including through automatic means, e.g. autodialing, text and pre-recorded messaging) about our services at the telephone number provided.
+                </div>
+                <button id="personalDetailsContinueBtn" class="continue-btn">
+                    SUBMIT YOUR DETAILS &nbsp;<i class="fa-solid fa-greater-than"></i>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Page 3: Confirmation -->
+    <div id="confirmationPage" class="page">
+        <main class="main-content">
+            <div class="container3">
+                
+                <div id="confirmationDetails" class="confirmation-details">
+                    <!-- Confirmation details will be populated dynamically -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="footer-links">
+        <a href="#">Terms and Conditions  |</a> 
+        <a href="#">Privacy Policy  |</a> 
+        <a href="#">California Privacy</a>
+    </div>
+    <footer class="footer">
+       
+    
+        <div class="disclaimer">
+            This site is not a part of the Facebook website or Facebook Inc. Additionally, Facebook does NOT endorse this site. FACEBOOK is a trademark of FACEBOOK, Inc. This site is not a part of the You Tube website or Google, LLC. Additionally, This site is NOT endorsed by Google in any way.
+            <br><br>
+            While we may provide you preliminary information on whether you qualify for compensation, your local governing body ultimately determines who qualifies and what claims are paid. This site is provided for informational purposes only. If you have questions about whether you qualify, please contact an attorney.
+            <br><br>
+            THIS IS A PAID ATTORNEY / ADVOCATE ADVERTISEMENT.
+            <br><br>
+            *While we may provide you preliminary information on whether you may qualify for compensation, the US. District Court, Eastern District of North Carolina ultimately determines who qualifies and what claims are paid. This site is provided for informational purposes only. If you have questions about whether you qualify, please contact an attorney.
+            <br><br>
+            This website uses Google Analytics and Google Ads to track your journey for marketing purposes. If you wish to opt-out of user-tracking click here.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
